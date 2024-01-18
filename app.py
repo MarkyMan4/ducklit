@@ -71,7 +71,7 @@ def load_sample_data(conn: duckdb.DuckDBPyConnection):
 
 def create_page(conn: duckdb.DuckDBPyConnection):
     st.title("ducklit :duck:")
-    st.write("Query your files with duckdb")
+    st.write("Query your files with DuckDB")
     st.divider()
 
     cur = conn.cursor()

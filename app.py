@@ -9,13 +9,16 @@ from code_editor import code_editor
 st.set_page_config(page_title="ducklit", page_icon=":duck:")
 
 
-@st.cache_resource
-def create_connection():
-    return duckdb.connect(":memory:")
+# @st.cache_resource
+def get_db_connection():
+    if "duck_conn" not in st.session_state:
+        st.session_state["duck_conn"] = duckdb.connect(":memory:")
+
+    return st.session_state["duck_conn"]
 
 
 def main():
-    conn = create_connection()
+    conn = get_db_connection()
     create_side_bar(conn)
     create_page(conn)
 

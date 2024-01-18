@@ -76,6 +76,7 @@ def create_page(conn: duckdb.DuckDBPyConnection):
     st.write(
         "hint: you can write multiple queries as long as each one ends with a semicolon"
     )
+    st.write("ctrl+enter to run the SQL")
     res = code_editor(code="", lang="sql", key="editor")
 
     for query in res["text"].split(";"):

@@ -2,4 +2,4 @@
 
 A Streamlit app for uploading CSV or JSON files and querying them with DuckDB
 
-![ducklit](https://github.com/MarkyMan4/ducklit/assets/37815834/d895c68a-75b1-4b47-9bf4-1f99b04c19e7)
+![ducklit](https://github.com/MarkyMan4/ducklit/assets/37815834/60a69b46-695c-42e2-89f4-2f5f90203c53)

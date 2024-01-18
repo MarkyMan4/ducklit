@@ -6,6 +6,8 @@ import duckdb
 import streamlit as st
 from code_editor import code_editor
 
+st.set_page_config(page_title="ducklit", page_icon=":duck:")
+
 
 @st.cache_resource
 def create_connection():
@@ -68,7 +70,7 @@ def load_sample_data(conn: duckdb.DuckDBPyConnection):
 
 
 def create_page(conn: duckdb.DuckDBPyConnection):
-    st.header("ducklit :duck:")
+    st.title("ducklit :duck:")
     st.write("Query your files with duckdb")
     st.divider()
 
